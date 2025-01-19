@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Association Joud</title>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="home.css" />
+  <link rel="icon" href="images/logo1.png" type="icon">
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3" href="index.html">
+        <img src="images/logo.png" class="logo" alt="Logo" id="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto spaced-nav">
+          <li class="nav-item px-3">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown px-3">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Pages</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="pages.html">About Us</a></li>
+              <li>
+                <a class="dropdown-item" href="pages.html#our-services">Our Services</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="programs.html">Programs</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item px-3">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero-section">
+    <div class="content">
+      <img src="images/bismilah.png" alt="Bismillah" class="bismillah-image" />
+      <h1>Guidance for Life: Inspired by the Sunnah and Quran</h1>
+      <a href="#about-section">
+        <button>Learn More</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="audio-section">
+    <div class="audio-container">
+      <div class="audio-title">
+        <img src="images/audio-cover.png" alt="Logo" class="audio-logo" />
+        <span class="surah-title">Surah Fatiha (Listen Carefully)</span>
+      </div>
+      <div class="custom-audio-player">
+        <button class="custom-audio-button" onclick="togglePlay()">
+          <svg viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z"></path>
+          </svg>
+        </button>
+        <div class="custom-audio-progress">
+          <div class="custom-audio-progress-filled"></div>
+        </div>
+        <span class="custom-audio-time">0:00</span>
+        <audio id="audio">
+          <source src="sourat alfatiha.mp3" type="audio/ogg" />
+          <source src="sourat alfatiha.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+
+  <section class="about-section" id="about-section">
+    <div class="decorative-lines">
+      <div class="decorative-line left"></div>
+      <span class="organization-name">Association JOOD</span>
+      <div class="decorative-line right"></div>
+    </div>
+    <div class="about-container">
+      <div class="about-content">
+        <h2 class="about-title">About Association JOOD</h2>
+        <p class="about-description">
+          Joud Association, established in 2010, provides religious education for children and women, helping them grow
+          in faith and knowledge. We offer lessons in Quran, Islamic studies, and more, in a supportive and welcoming
+          environment.
+        </p>
+      </div>
+      <img src="images/about-section.png" alt="Islamic Center" class="about-image" />
+    </div>
+    <div class="decorative-lines">
+      <div class="decorative-line left"></div>
+      <span class="organization-name">Prayer Timings</span>
+      <div class="decorative-line right"></div>
+    </div>
+    <div class="prayer-timings">
+      <div class="prayer-card">
+        <img src="images/fajr.png" alt="Fajr Prayer" />
+        <h3>FAJR</h3>
+        <p>Begins: <span>07:00 AM</span></p>
+        <p>Iqamah: <span>07:20 AM</span></p>
+      </div>
+      <div class="prayer-card">
+        <img src="images/azuhr.png" alt="Zuhr Prayer" />
+        <h3>ZUHR</h3>
+        <p>Begins: <span>13:40 PM</span></p>
+        <p>Iqamah: <span>13:50 PM</span></p>
+      </div>
+      <div class="prayer-card">
+        <img src="images/alassr.jpg" alt="Asr Prayer" />
+        <h3>ASR</h3>
+        <p>Begins: <span>16:19 PM</span></p>
+        <p>Iqamah: <span>16:30 PM</span></p>
+      </div>
+      <div class="prayer-card">
+        <img src="images/almaghrib.jpg" alt="Maghrib Prayer" />
+        <h3>MAGRIB</h3>
+        <p>Begins: <span>18:42 PM</span></p>
+        <p>Iqamah: <span>18:50 PM</span></p>
+      </div>
+      <div class="prayer-card">
+        <img src="images/aicha2.jpg" alt="Isha Prayer" />
+        <h3>ISHA</h3>
+        <p>Begins: <span>20:01 PM</span></p>
+        <p>Iqamah: <span>20:20 PM</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pillars-section" id="pillars-section">
+    <div class="decorative-lines">
+      <div class="decorative-line left"></div>
+      <span class="organization-name">Pillars of Islam</span>
+      <div class="decorative-line right"></div>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="pillar-card h-100">
+            <img src="images/shahada.png" alt="Shahada" class="pillar-icon" />
+            <h3 class="pillar-name">Shahada</h3>
+            <p class="pillar-description">
+              The declaration of faith, professing that there is only one God
+              and Muhammad is His prophet.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="pillar-card h-100">
+            <img src="images/salat.png" alt="Salat" class="pillar-icon" />
+            <h3 class="pillar-name">Salat</h3>
+            <p class="pillar-description">
+              The ritual prayer performed five times a day, facing the Kaaba
+              in Mecca.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="pillar-card h-100">
+            <img src="images/zakat.png" alt="Zakat" class="pillar-icon" />
+            <h3 class="pillar-name">Zakat</h3>
+            <p class="pillar-description">
+              The giving of a fixed portion of one's wealth to the needy, a
+              form of almsgiving.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mx-auto mb-4">
+          <div class="pillar-card text-center h-100">
+            <img src="images/sawm.png" alt="Sawm" class="pillar-icon" />
+            <h3 class="pillar-name">Sawm</h3>
+            <p class="pillar-description">
+              Fasting during the month of Ramadan, abstaining from food,
+              drink, and other specific activities from dawn to sunset.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mx-auto mb-4">
+          <div class="pillar-card text-center h-100">
+            <img src="images/hajj.png" alt="Hajj" class="pillar-icon" />
+            <h3 class="pillar-name">Hajj</h3>
+            <p class="pillar-description">
+              The pilgrimage to Mecca, which every Muslim must undertake at
+              least once in their lifetime if they are able.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="events-section" id="events-section">
+    <div class="decorative-lines">
+      <div class="decorative-line left"></div>
+      <span class="organization-name">Our Events</span>
+      <div class="decorative-line right"></div>
+    </div>
+    <div class="container">
+      <table class="table table-bordered text-center">
+        <thead>
+          <tr>
+            <th class="event-column">Our Events</th>
+            <th class="dates-column">Dates</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="event-content">
+              <div class="d-flex flex-column align-items-center">
+                <img src="images/khatm-icon.png" alt="Khatma Icon" class="event-icon" />
+                <h4 class="event-name">Khatm Quran</h4>
+                <a href="events.html#khatm-section" class="btn-link"><button class="btn mt-2">Learn More</button></a>
+              </div>
+            </td>
+            <td class="dates-content">The entire month of Ramadan (9th month of the Islamic calendar)</td>
+          </tr>
+          <tr class="divider-row">
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td class="event-content">
+              <div class="d-flex flex-column align-items-center">
+                <img src="images/hajj-icon.png" alt="Hajj Icon" class="event-icon" />
+                <h4 class="event-name">Hajj & Umrah</h4>
+                <a href="events.html#hajj-section" class="btn-link"><button class="btn mt-2">Learn More</button></a>
+              </div>
+            </td>
+            <td class="dates-content">On the 10th day of Dhu al-Hijjah (Islamic calendar)</td>
+          </tr>
+          <tr class="divider-row">
+            <td colspan="2"></td>
+          </tr>
+          <tr>
+            <td class="event-content">
+              <div class="d-flex flex-column align-items-center">
+                <img src="images/donation-icon.png" alt="Donation Icon" class="event-icon" />
+                <h4 class="event-name">Donations</h4>
+                <a href="events.html#donation-section" class="btn-link"><button class="btn mt-2">Learn More</button></a>
+              </div>
+            </td>
+            <td class="dates-content">Continuous, year-round activities</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="ticker-wrapper">
+    <div class="ticker">
+      <div class="ticker-item">
+        <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+        " اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا،
+        وَعَمَلًا مُتَقَبَّلًا "
+      </div>
+      <div class="ticker-item">
+        <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+        " لَّا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ
+        الظَّالِمِينََ "
+      </div>
+      <div class="ticker-item">
+        <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+        " رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِن ذُرِّيَّتِي ۚ رَبَّنَا
+        وَتَقَبَّلْ دُعَاءِ "
+      </div>
+      <div class="ticker-item">
+        <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+        " فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ أَنتَ وَلِيِّي فِي الدُّنْيَا
+        وَالْآخِرَةِ ۖ تَوَفَّنِي مُسْلِمًا وَأَلْحِقْنِي بِالصَّالِحِينَ "
+      </div>
+      <div class="ticker-item">
+        <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+        " وَقُل رَّبِّ أَدْخِلْنِى مُدْخَلَ صِدْقٍۢ وَأَخْرِجْنِى مُخْرَجَ
+        صِدْقٍۢ وَٱجْعَل لِّى مِن لَّدُنكَ سُلْطَٰنًا نَّصِيرًا "
+      </div>
+      <div class="ticker-item">
+        <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+        " اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنْ أَنْ نُشْرِكَ بِكَ شَيْئًا
+        نَعْلَمُهُ ، وَنَسْتَغْفِرُكَ لِمَا لَا نَعْلَمُهُ "
+      </div>
+      <div class="ticker-item">
+        <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+        " وَذَكِّرْ فَإِنَّ الذِّكْرَى تَنْفَعُ الْمُؤْمِنِينَ "
+      </div>
+      <div class="ticker-item">
+        <img src="images/logo1.png" alt="Logo" class="ticker-logo" />
+        " وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ أُجِيبُ دَعْوَةَ
+        الدَّاعِ إِذَا دَعَانِ فَلْيَسْتَجِيبُواْ لِي وَلْيُؤْمِنُواْ بِي
+        لَعَلَّهُمْ يَرْشُدُونَ "
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>Joud © Copyright 2025 - All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+    const audio = document.getElementById("audio");
+    const playButton = document.querySelector(".custom-audio-button");
+    const progress = document.querySelector(".custom-audio-progress-filled");
+    const timeDisplay = document.querySelector(".custom-audio-time");
+
+    function togglePlay() {
+      if (audio.paused) {
+        audio.play();
+        playButton.innerHTML =
+          '<svg viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path></svg>';
+      } else {
+        audio.pause();
+        playButton.innerHTML =
+          '<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg>';
+      }
+    }
+
+    audio.addEventListener("timeupdate", () => {
+      const percent = (audio.currentTime / audio.duration) * 100;
+      progress.style.width = percent + "%";
+
+      const minutes = Math.floor(audio.currentTime / 60);
+      const seconds = Math.floor(audio.currentTime % 60);
+      timeDisplay.textContent = `${minutes}:${seconds < 10 ? "0" + seconds : seconds
+        }`;
+    });
+  </script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
